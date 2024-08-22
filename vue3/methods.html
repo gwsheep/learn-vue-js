@@ -2,6 +2,7 @@
 <div id="app">
   <p>{{ count }}</p>
   <button v-on:click="addCount">+</button>
+  <button v-on:click="minusCount">-</button>
 </div>
 
 <!-- JavaScript -->
@@ -16,6 +17,9 @@
     methods: {
       addCount() {
         this.count++;
+      },
+      minusCount() {
+        this.count--;
       }
     }
   }).mount('#app');
